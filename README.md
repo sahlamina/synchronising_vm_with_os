@@ -5,7 +5,7 @@ config.vm.synced_folder "app", "/home/vagrant/app"
 ```
 
 - this line of code says it would like to add the file "app" from my machine to the vm
-- we destroyed our vm from yesterday, started up a new one and used a zip file downloaded from Shahruk
+- we destroyed our vm from yesterday, started up a new one and used a zip file downloaded from Shahrukh
 
 the app file did not appear so I used the
 
