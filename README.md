@@ -1,3 +1,50 @@
+# Vagrant Day2, Synchronising VM with OS
+
+```bash
+config.vm.synced_folder "app", "/home/vagrant/app"
+```
+
+- this line of code says it would like to add the file "app" from my machine to the vm
+- we destroyed our vm from yesterday, started up a new one and used a zip file downloaded from Shahruk
+
+the app file did not appear so I used the
+
+For Mac Users running a new Vagrant file, an error can occur with VM saying the user created doesn't match with
+current user running Vagrant. To resolve this error, these are steps to resolve it:
+
+- Sometimes, it causes a conflict and it uses the one of the old .vagrant file to start up the machine. To avoid this
+conflict and start from a completely new vagrant machine.
+
+```bash
+rm -r .vagrant
+```
+
+This should remove the .vagrant file which deletes the conflict from a previous vagrant machine. In other words,
+resolving the error.
+
+```bash
+remove -r .vagrant
+```
+
+to remove the .vagrant file as it kept trying to route the
+
+### Communication  with Developer is vital to understand the requirements
+
+Comms is key to successful projects
+
+- communication between dev-ops-testers-QA and devops
+
+Questions to ask when placed on a proj
+
+- What language is used to build this app?
+- What framework is being used?
+    - MVC, React (frontend framework), Node, Nginx, Ruby
+    - These need to be installed beforehand
+- Are there any dependencies to be installed together?
+    - dependencies are things like modules that allow requests to work
+    - dependencies can be a package, software, module
+- What will the app look like?
+
 ### Installing Bundler
 
 ```bash
